@@ -146,7 +146,7 @@ man: {
       services: manDefaultServices
     },
     {
-      name: "MAN TG-S-X E6 2019+ (D26 MD1)",
+      name: "MAN TG-S-X E6 2019 plus (D26 MD1)",
       engine: "12.4 TDI D26 400-510hp",
       ecu: "Bosch MD1CE100",
       services: manDefaultServices
@@ -158,7 +158,7 @@ man: {
      services: manDefaultServices
     },
     {
-      name: "MAN TG-S-X E6 2019+ (D38 MD1)",
+      name: "MAN TG-S-X E6 2019 plus (D38 MD1)",
       engine: "15.2 TDI D38 540-650hp",
       ecu: "Bosch MD1CE100",
       services: manDefaultServices
