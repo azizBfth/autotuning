@@ -17,21 +17,21 @@ export type Brand = {
 };
 
 const defaultServices: Service[] = [
-  { name: "Emission delete (SCR DPF EGR OFF", price: 0 },
+  { name: "Emission delete: AdBlue (SCR), DPF, EGR", price: 0 },
   { name: "HorsePower Increase STG1", price: 0 },
   { name: "AdBlue Consumption ", price: 0 },
  
 
 ];
 const manDefaultServices: Service[] = [
-  { name: "Emission delete (SCR DPF EGR OFF", price: 0 },
+  { name: "Emission delete: AdBlue (SCR), DPF, EGR", price: 0 },
   { name: "HorsePower Increase STG1", price: 0 },
   { name: "AdBlue Consumption ", price: 0 },
  
 
 ];
 const volvoDefaultServices: Service[] = [
-  { name: "Emission delete (SCR DPF EGR OFF", price: 0 },
+  { name: "Emission delete: AdBlue (SCR), DPF, EGR", price: 0 },
   { name: "HorsePower Increase STG1", price: 0 },
   { name: "AdBlue Consumption ", price: 0 },
    { name: "Flash Stock File ", price: 0 },
