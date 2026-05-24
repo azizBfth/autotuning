@@ -56,135 +56,7 @@ const defaultModel = (brand: string): Model => ({
 });
 
 export const truckData: Record<string, Brand> = {
-man: {
-  name: "MAN",
-  description: "MAN truck ECU diagnostics and performance tuning.",
-  models: [
-    {
-      name: "MAN TG-E",
-      engine: "2.0 TDI 177hp",
-      ecu: "Delphi DCM6.2",
-      services: manDefaultServices
-    },
-    {
-      name: "MAN TG-A-L",
-      engine: "3.0 TDI 240hp",
-      ecu: "Bosch EDC7-C32 - ACM DCU15",
-     services: manDefaultServices
-    },
-    {
-      name: "MAN TG-A-L-M E3",
-      engine: "4.6 TDI D0834 310-410hp",
-      ecu: "Bosch MS6.1",
-     services: manDefaultServices
-    },
-    {
-      name: "MAN TG-A-M - CL-A E6 (D0834 160-220hp)",
-      engine: "4.6 TDI D0834 160-220hp",
-      ecu: "Bosch EDC17CV42",
-      services: manDefaultServices
-    },
-    {
-      name: "MAN TG-A-M-L E6 (D0834)",
-      engine: "4.6 TDI D0834 160-220hp",
-      ecu: "Bosch MD1CE100",
-     services: manDefaultServices
-    },
-    {
-      name: "MAN TG-A-M - CL-A E5 (D0836)",
-      engine: "6.9 TDI D0836 250-320hp",
-      ecu: "Bosch EDC7C32 - ACM DCU15",
-     services: manDefaultServices
-    },
-    {
-      name: "MAN TG-A-M - CL-A E6 (D0836)",
-      engine: "6.9 TDI D0836 250-320hp",
-      ecu: "Bosch EDC17CV42",
-     
-    services: manDefaultServices
-    },
-    {
-      name: "MAN TG-A-M-L E6 (D0836 high power)",
-      engine: "6.9 TDI D0836 250-330hp",
-      ecu: "Bosch MD1CE100",
-      services: manDefaultServices
-    },
-    {
-      name: "MAN TG-A-M-L E6 (D15)",
-      engine: "9.0 TDI D15 330-400hp",
-      ecu: "Bosch EDC17CV42",
-      services: manDefaultServices
-    },
-    {
-      name: "MAN TG-A-M-S E5 (D20)",
-      engine: "10.5 TDI D20 310-440hp",
-      ecu: "Bosch EDC7 - ACM DCU15",
-     services: manDefaultServices
-    },
-    {
-      name: "MAN TG-A-M - CL-A E6 (D20)",
-      engine: "10.5 TDI D20 320-380hp",
-      ecu: "Bosch EDC17CV42",
-      services: manDefaultServices
-    },
-    {
-      name: "MAN TG-S-A E3-4",
-      engine: "12.0 TDI 420-530hp",
-      ecu: "Bosch MS6.1",
-      services: manDefaultServices
-    },
-    {
-      name: "MAN TG-A-M-S E5 (D26)",
-      engine: "12.4 TDI D26 400-540hp",
-      ecu: "Bosch EDC7-C32 - ACM DCU15",
-     services: manDefaultServices
-    },
-    {
-      name: "MAN TG-S-X E6 (D26)",
-      engine: "12.4 TDI D26 400-520hp",
-      ecu: "Bosch EDC17CV42",
-      services: manDefaultServices
-    },
-    {
-      name: "MAN TG-S-X E6 2019 plus (D26 MD1)",
-      engine: "12.4 TDI D26 400-510hp",
-      ecu: "Bosch MD1CE100",
-      services: manDefaultServices
-    },
-    {
-      name: "MAN TG-S-X E6 (D38)",
-      engine: "15.2 TDI D38 540-650hp",
-      ecu: "Bosch EDC17CV42",
-     services: manDefaultServices
-    },
-    {
-      name: "MAN TG-S-X E6 2019 plus (D38 MD1)",
-      engine: "15.2 TDI D38 540-650hp",
-      ecu: "Bosch MD1CE100",
-      services: manDefaultServices
-    },
-    {
-      name: "MAN TG-S-X E5 (D2868)",
-      engine: "16.2 TDI D2868 580-680hp",
-      ecu: "Bosch EDC7C32 - ACM DCU15",
-     services: manDefaultServices
-    },
-    {
-      name: "MAN TG-S-X E5 (EDC17)",
-      engine: "16.2 TDI D2868 580-680hp",
-      ecu: "Bosch EDC17CV42",
-      services: manDefaultServices
-    },
-    {
-      name: "MAN TGX - Marine E6 (D42)",
-      engine: "16.2 TDI D42 600-790hp",
-      ecu: "Bosch EDC17CV42",
-     services: manDefaultServices
-    }
-  ]
-},
-
-volvo: {
+  volvo: {
   name: "Volvo",
   description: "Volvo FH/FM ECU tuning and diagnostics.",
   models: [
@@ -568,6 +440,135 @@ renault: {
     },
   ],
 },
+man: {
+  name: "MAN",
+  description: "MAN truck ECU diagnostics and performance tuning.",
+  models: [
+    {
+      name: "MAN TG-E",
+      engine: "2.0 TDI 177hp",
+      ecu: "Delphi DCM6.2",
+      services: manDefaultServices
+    },
+    {
+      name: "MAN TG-A-L",
+      engine: "3.0 TDI 240hp",
+      ecu: "Bosch EDC7-C32 - ACM DCU15",
+     services: manDefaultServices
+    },
+    {
+      name: "MAN TG-A-L-M E3",
+      engine: "4.6 TDI D0834 310-410hp",
+      ecu: "Bosch MS6.1",
+     services: manDefaultServices
+    },
+    {
+      name: "MAN TG-A-M - CL-A E6 (D0834 160-220hp)",
+      engine: "4.6 TDI D0834 160-220hp",
+      ecu: "Bosch EDC17CV42",
+      services: manDefaultServices
+    },
+    {
+      name: "MAN TG-A-M-L E6 (D0834)",
+      engine: "4.6 TDI D0834 160-220hp",
+      ecu: "Bosch MD1CE100",
+     services: manDefaultServices
+    },
+    {
+      name: "MAN TG-A-M - CL-A E5 (D0836)",
+      engine: "6.9 TDI D0836 250-320hp",
+      ecu: "Bosch EDC7C32 - ACM DCU15",
+     services: manDefaultServices
+    },
+    {
+      name: "MAN TG-A-M - CL-A E6 (D0836)",
+      engine: "6.9 TDI D0836 250-320hp",
+      ecu: "Bosch EDC17CV42",
+     
+    services: manDefaultServices
+    },
+    {
+      name: "MAN TG-A-M-L E6 (D0836 high power)",
+      engine: "6.9 TDI D0836 250-330hp",
+      ecu: "Bosch MD1CE100",
+      services: manDefaultServices
+    },
+    {
+      name: "MAN TG-A-M-L E6 (D15)",
+      engine: "9.0 TDI D15 330-400hp",
+      ecu: "Bosch EDC17CV42",
+      services: manDefaultServices
+    },
+    {
+      name: "MAN TG-A-M-S E5 (D20)",
+      engine: "10.5 TDI D20 310-440hp",
+      ecu: "Bosch EDC7 - ACM DCU15",
+     services: manDefaultServices
+    },
+    {
+      name: "MAN TG-A-M - CL-A E6 (D20)",
+      engine: "10.5 TDI D20 320-380hp",
+      ecu: "Bosch EDC17CV42",
+      services: manDefaultServices
+    },
+    {
+      name: "MAN TG-S-A E3-4",
+      engine: "12.0 TDI 420-530hp",
+      ecu: "Bosch MS6.1",
+      services: manDefaultServices
+    },
+    {
+      name: "MAN TG-A-M-S E5 (D26)",
+      engine: "12.4 TDI D26 400-540hp",
+      ecu: "Bosch EDC7-C32 - ACM DCU15",
+     services: manDefaultServices
+    },
+    {
+      name: "MAN TG-S-X E6 (D26)",
+      engine: "12.4 TDI D26 400-520hp",
+      ecu: "Bosch EDC17CV42",
+      services: manDefaultServices
+    },
+    {
+      name: "MAN TG-S-X E6 2019 plus (D26 MD1)",
+      engine: "12.4 TDI D26 400-510hp",
+      ecu: "Bosch MD1CE100",
+      services: manDefaultServices
+    },
+    {
+      name: "MAN TG-S-X E6 (D38)",
+      engine: "15.2 TDI D38 540-650hp",
+      ecu: "Bosch EDC17CV42",
+     services: manDefaultServices
+    },
+    {
+      name: "MAN TG-S-X E6 2019 plus (D38 MD1)",
+      engine: "15.2 TDI D38 540-650hp",
+      ecu: "Bosch MD1CE100",
+      services: manDefaultServices
+    },
+    {
+      name: "MAN TG-S-X E5 (D2868)",
+      engine: "16.2 TDI D2868 580-680hp",
+      ecu: "Bosch EDC7C32 - ACM DCU15",
+     services: manDefaultServices
+    },
+    {
+      name: "MAN TG-S-X E5 (EDC17)",
+      engine: "16.2 TDI D2868 580-680hp",
+      ecu: "Bosch EDC17CV42",
+      services: manDefaultServices
+    },
+    {
+      name: "MAN TGX - Marine E6 (D42)",
+      engine: "16.2 TDI D42 600-790hp",
+      ecu: "Bosch EDC17CV42",
+     services: manDefaultServices
+    }
+  ]
+},
+
+
 scania: {
   name: "Scania",
   description: "Scania ECU optimization services.",
