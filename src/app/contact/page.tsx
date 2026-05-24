@@ -58,7 +58,7 @@ export default function ContactPage() {
             <div className="p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl">
               <h2 className="text-lg font-semibold">📞 WhatsApp Support</h2>
               <a
-                href="https://wa.me/971585173644"
+                href="https://wa.me/971585173644?text=Hello,%20I%20am%20contacting%20you%20through%20AutoTuningLab.%20I%20would%20like%20more%20information."
                 target="_blank"
                 className="text-blue-400 mt-3 block hover:underline"
               >

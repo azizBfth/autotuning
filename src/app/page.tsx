@@ -121,8 +121,7 @@ export default function Home() {
                 </Link>
 
                 <a
-                  href="https://wa.me/971585173644"
-                  target="_blank"
+href="https://wa.me/971585173644?text=Hello,%20I%20am%20contacting%20you%20through%20AutoTuningLab.%20I%20would%20like%20more%20information."                  target="_blank"
                   className="px-8 py-4 rounded-2xl
                              border border-white/10
                              bg-white/5 backdrop-blur-xl
@@ -246,8 +245,7 @@ export default function Home() {
                   </div>
 
                   <a
-                    href="https://wa.me/971585173644"
-                    target="_blank"
+href="https://wa.me/971585173644?text=Hello,%20I%20am%20contacting%20you%20through%20AutoTuningLab.%20I%20would%20like%20more%20information."                    target="_blank"
                     className="inline-block mt-3 text-lg font-bold"
                   >
                     Contact Expert →
@@ -416,8 +414,7 @@ export default function Home() {
             </Link>
 
             <a
-              href="https://wa.me/971585173644"
-              target="_blank"
+href="https://wa.me/971585173644?text=Hello,%20I%20am%20contacting%20you%20through%20AutoTuningLab.%20I%20would%20like%20more%20information."              target="_blank"
               className="px-8 py-4 rounded-2xl
                          border border-white/10
                          hover:bg-white hover:text-black
@@ -516,8 +513,7 @@ export default function Home() {
                 </a>
 
                 <a
-                  href="https://wa.me/971585173644"
-                  target="_blank"
+href="https://wa.me/971585173644?text=Hello,%20I%20am%20contacting%20you%20through%20AutoTuningLab.%20I%20would%20like%20more%20information."                  target="_blank"
                   className="block hover:text-blue-400 transition"
                 >
                   💬 WhatsApp Support
