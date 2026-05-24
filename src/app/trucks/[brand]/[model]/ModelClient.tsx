@@ -14,9 +14,9 @@ export default function ModelClient({ brand, model }: any) {
     );
   };
 
-  const handleWhatsApp = () => {
-    const message = `
-🚛 Truck ECU Request
+const handleWhatsApp = () => {
+  const message = `
+🚛 New ECU Request from AutoTuningLab Website
 
 Brand: ${brand}
 Model: ${model.name}
@@ -24,12 +24,13 @@ Model: ${model.name}
 Services:
 ${selectedServices.map((s) => `- ${s}`).join("\n")}
 
-File: ${fileLink || "N/A"}
-    `;
 
-    const url = `https://wa.me/+971585173644?text=${encodeURIComponent(message)}`;
-    window.open(url, "_blank");
-  };
+Source: AutoTuningLab Website
+  `;
+
+  const url = `https://wa.me/971585173644?text=${encodeURIComponent(message)}`;
+  window.open(url, "_blank");
+};
 
   return (
     <main className="min-h-screen bg-black text-white px-6 py-10">
