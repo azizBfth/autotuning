@@ -17,18 +17,35 @@ export type Brand = {
 };
 
 const defaultServices: Service[] = [
-  { name: "ECU diagnostics", price: 150 },
-  { name: "Fault code analysis", price: 120 },
-  { name: "Performance optimization", price: 180 },
-  { name: "Extra file / ACM / EEP / VR by ID", price: 0 },
+  { name: "Emission delete (SCR DPF EGR OFF", price: 0 },
+  { name: "HorsePower Increase STG1", price: 0 },
+  { name: "AdBlue Consumption ", price: 0 },
+ 
 
-  { name: "AdBlue / SCR off", price: 0 },
-  { name: "DPF off / emulation", price: 0 },
-  { name: "DOC / Catalyst / LO2 off", price: 0 },
-  { name: "EGR off", price: 0 },
-  { name: "TVA / flaps off", price: 0 },
+];
+const manDefaultServices: Service[] = [
+  { name: "Emission delete (SCR DPF EGR OFF", price: 0 },
+  { name: "HorsePower Increase STG1", price: 0 },
+  { name: "AdBlue Consumption ", price: 0 },
+ 
 
-  { name: "Stage-2 / Special request", price: 0 }
+];
+const volvoDefaultServices: Service[] = [
+  { name: "Emission delete (SCR DPF EGR OFF", price: 0 },
+  { name: "HorsePower Increase STG1", price: 0 },
+  { name: "AdBlue Consumption ", price: 0 },
+   { name: "Flash Stock File ", price: 0 },
+
+
+];
+const renaultDefaultServices: Service[] = [
+  { name: "Emission delete (SCR DPF EGR OFF", price: 0 },
+  { name: "HorsePower Increase STG1", price: 0 },
+  { name: "AdBlue Consumption ", price: 0 },
+  { name: "Flash Stock File ", price: 0 },
+
+ 
+
 ];
 
 const defaultModel = (brand: string): Model => ({
@@ -47,143 +64,510 @@ man: {
       name: "MAN TG-E",
       engine: "2.0 TDI 177hp",
       ecu: "Delphi DCM6.2",
-      services: defaultServices
+      services: manDefaultServices
     },
     {
       name: "MAN TG-A-L",
       engine: "3.0 TDI 240hp",
-      ecu: "Bosch EDC7-C32 / ACM DCU15",
-     services: defaultServices
+      ecu: "Bosch EDC7-C32 - ACM DCU15",
+     services: manDefaultServices
     },
     {
       name: "MAN TG-A-L-M E3",
       engine: "4.6 TDI D0834 310-410hp",
       ecu: "Bosch MS6.1",
-     services: defaultServices
+     services: manDefaultServices
     },
     {
-      name: "MAN TG-A-M / CL-A E6 (D0834 160-220hp)",
+      name: "MAN TG-A-M - CL-A E6 (D0834 160-220hp)",
       engine: "4.6 TDI D0834 160-220hp",
       ecu: "Bosch EDC17CV42",
-      services: defaultServices
+      services: manDefaultServices
     },
     {
       name: "MAN TG-A-M-L E6 (D0834)",
       engine: "4.6 TDI D0834 160-220hp",
       ecu: "Bosch MD1CE100",
-     services: defaultServices
+     services: manDefaultServices
     },
     {
-      name: "MAN TG-A-M / CL-A E5 (D0836)",
+      name: "MAN TG-A-M - CL-A E5 (D0836)",
       engine: "6.9 TDI D0836 250-320hp",
-      ecu: "Bosch EDC7C32 / ACM DCU15",
-     services: defaultServices
+      ecu: "Bosch EDC7C32 - ACM DCU15",
+     services: manDefaultServices
     },
     {
-      name: "MAN TG-A-M / CL-A E6 (D0836)",
+      name: "MAN TG-A-M - CL-A E6 (D0836)",
       engine: "6.9 TDI D0836 250-320hp",
       ecu: "Bosch EDC17CV42",
      
-    services: defaultServices
+    services: manDefaultServices
     },
     {
       name: "MAN TG-A-M-L E6 (D0836 high power)",
       engine: "6.9 TDI D0836 250-330hp",
       ecu: "Bosch MD1CE100",
-      services: defaultServices
+      services: manDefaultServices
     },
     {
       name: "MAN TG-A-M-L E6 (D15)",
       engine: "9.0 TDI D15 330-400hp",
       ecu: "Bosch EDC17CV42",
-      services: defaultServices
+      services: manDefaultServices
     },
     {
       name: "MAN TG-A-M-S E5 (D20)",
       engine: "10.5 TDI D20 310-440hp",
-      ecu: "Bosch EDC7 / ACM DCU15",
-     services: defaultServices
+      ecu: "Bosch EDC7 - ACM DCU15",
+     services: manDefaultServices
     },
     {
-      name: "MAN TG-A-M / CL-A E6 (D20)",
+      name: "MAN TG-A-M - CL-A E6 (D20)",
       engine: "10.5 TDI D20 320-380hp",
       ecu: "Bosch EDC17CV42",
-      services: defaultServices
+      services: manDefaultServices
     },
     {
       name: "MAN TG-S-A E3-4",
       engine: "12.0 TDI 420-530hp",
       ecu: "Bosch MS6.1",
-      services: defaultServices
+      services: manDefaultServices
     },
     {
       name: "MAN TG-A-M-S E5 (D26)",
       engine: "12.4 TDI D26 400-540hp",
-      ecu: "Bosch EDC7-C32 / ACM DCU15",
-     services: defaultServices
+      ecu: "Bosch EDC7-C32 - ACM DCU15",
+     services: manDefaultServices
     },
     {
       name: "MAN TG-S-X E6 (D26)",
       engine: "12.4 TDI D26 400-520hp",
       ecu: "Bosch EDC17CV42",
-      services: defaultServices
+      services: manDefaultServices
     },
     {
       name: "MAN TG-S-X E6 2019+ (D26 MD1)",
       engine: "12.4 TDI D26 400-510hp",
       ecu: "Bosch MD1CE100",
-      services: defaultServices
+      services: manDefaultServices
     },
     {
       name: "MAN TG-S-X E6 (D38)",
       engine: "15.2 TDI D38 540-650hp",
       ecu: "Bosch EDC17CV42",
-     services: defaultServices
+     services: manDefaultServices
     },
     {
       name: "MAN TG-S-X E6 2019+ (D38 MD1)",
       engine: "15.2 TDI D38 540-650hp",
       ecu: "Bosch MD1CE100",
-      services: defaultServices
+      services: manDefaultServices
     },
     {
       name: "MAN TG-S-X E5 (D2868)",
       engine: "16.2 TDI D2868 580-680hp",
-      ecu: "Bosch EDC7C32 / ACM DCU15",
-     services: defaultServices
+      ecu: "Bosch EDC7C32 - ACM DCU15",
+     services: manDefaultServices
     },
     {
       name: "MAN TG-S-X E5 (EDC17)",
       engine: "16.2 TDI D2868 580-680hp",
       ecu: "Bosch EDC17CV42",
-      services: defaultServices
+      services: manDefaultServices
     },
     {
-      name: "MAN TGX / Marine E6 (D42)",
+      name: "MAN TGX - Marine E6 (D42)",
       engine: "16.2 TDI D42 600-790hp",
       ecu: "Bosch EDC17CV42",
-     services: defaultServices
+     services: manDefaultServices
     }
   ]
 },
 
-  volvo: {
-    name: "Volvo",
-    description: "Volvo FH/FM ECU tuning and diagnostics.",
-    models: [
-      {
-        name: "Volvo FH16",
-        engine: "D16K",
-        ecu: "Bosch EDC17",
-        services: [
-          { name: "Fuel optimization", price: 250 },
-          { name: "ECU tuning", price: 250 },
-          { name: "Performance increase", price: 250 },
-        ],
-      },
-    ],
-  },
-
+volvo: {
+  name: "Volvo",
+  description: "Volvo FH/FM ECU tuning and diagnostics.",
+  models: [
+    {
+      name: "Volvo D1.8 Euro-5",
+      engine: "1.8 TDI 40-50hp",
+      ecu: "Bosch EDC17CV45-C55",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D2.6 Euro-5",
+      engine: "2.6 TDI 50-70hp",
+      ecu: "Denso SH7058 - SH7254x",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D3 Euro-5",
+      engine: "3.3 TDI 55-80hp",
+      ecu: "Denso SH7058",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D3.8 Euro-5",
+      engine: "3.8 TDI 90-130hp",
+      ecu: "Denso SH7254x",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D4 Euro-4",
+      engine: "4.1 TDI 108-156hp",
+      ecu: "TRW EMS2.0 - ACM DCU15",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D4 Euro-4-5",
+      engine: "4.1 TDI 108-156hp",
+      ecu: "TRW EMS2.2 - ACM",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D4 Euro-6",
+      engine: "4.1 TDI 108-156hp",
+      ecu: "TRW EMS2.3 - ACM",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D5 Euro-5",
+      engine: "4.8 TDI 110-160hp",
+      ecu: "TRW EMS2.2   ACM",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D5 - TAD57 Euro-5",
+      engine: "5.1 TDI 120-240hp",
+      ecu: "TRW EMS2.2 - ACM",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D5 - TAD58 Euro-6",
+      engine: "5.1 TDI 120-350hp",
+      ecu: "TRW EMS2.3 - ACM",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D5 - TAD58 Euro-6 (alt)",
+      engine: "5.1 TDI 120-350hp",
+      ecu: "TRW EMS2.4 - ACM",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D6 Euro-5",
+      engine: "5.7 TDI 120-240hp",
+      ecu: "TRW EMS2.2 - ACM",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D6 Euro-6",
+      engine: "5.7 TDI 120-240hp",
+      ecu: "TRW EMS2.3 - ACM",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D7 Euro-5 (D7E)",
+      engine: "7.1 TDI 240-320hp",
+      ecu: "TRW EMS2.0 - ACM DCU15",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D7 Euro-5 (D7F)",
+      engine: "7.1 TDI 250-330hp",
+      ecu: "Bosch EDC7 - ACM DCU15",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D7 Euro-5 (standard)",
+      engine: "7.1 TDI 250-320hp",
+      ecu: "TRW EMS2.2 - ACM",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D7 - TAD76x Euro-5",
+      engine: "7.2 TDI 250-320hp",
+      ecu: "TRW EMS2.2 - ACM",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D8 Euro-5",
+      engine: "7.7 TDI 240-320hp",
+      ecu: "TRW EMS2.2 - ACM",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D8 - TAD87x Euro-6",
+      engine: "7.7 TDI 240-350hp",
+      ecu: "TRW EMS2.3 - ACM",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D8 - TAD78-88 Euro-6",
+      engine: "7.8 TDI 240-350hp",
+      ecu: "TRW EMS2.3 - ACM",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D8 - TAD78-88 Euro-6 (alt)",
+      engine: "7.8 TDI 240-350hp",
+      ecu: "TRW EMS2.4 - ACM",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D9 - TAD94 Euro-5",
+      engine: "9.4 TDI 250-380hp",
+      ecu: "TRW EMS2.2 - ACM",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D9 - TAD94 Euro-6",
+      engine: "9.4 TDI 250-380hp",
+      ecu: "TRW EMS2.3 - ACM",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D11 Euro-3",
+      engine: "10.8 TDI 360hp",
+      ecu: "LUCAS B/C/D",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D11 Euro-4",
+      engine: "10.8 TDI 315-425hp",
+      ecu: "TRW EMS2.0 - ACM DCU15",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D11 Euro-5",
+      engine: "10.8 TDI 315-425hp",
+      ecu: "TRW EMS2.2 - ACM",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D11 - TAD11 Euro-6",
+      engine: "10.8 TDI 315-460hp",
+      ecu: "TRW EMS2.3 - ACM",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D11 - TAD11 Euro-6 (alt)",
+      engine: "10.8 TDI 315-460hp",
+      ecu: "TRW EMS2.4 - ACM",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D12 Euro-3",
+      engine: "D12 340-460hp",
+      ecu: "LUCAS B/C/D",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D12 Euro-4",
+      engine: "12.1 TDI 400-510hp",
+      ecu: "TRW EMS2.0 - ACM DCU15",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D12 Euro-4 (alt)",
+      engine: "12.1 TDI 400-510hp",
+      ecu: "TRW EMS2.2 - ACM",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D12 Euro-6",
+      engine: "12.1 TDI 400-510hp",
+      ecu: "TRW EMS2.3 - ACM",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D13 Euro-4",
+      engine: "12.8 TDI 290-500hp",
+      ecu: "TRW EMS2.0 - ACM DCU15",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D13 - TAD13 Euro-5",
+      engine: "12.8 TDI 290-540hp",
+      ecu: "TRW EMS2.2 - ACM",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D13 - TAD13 Euro-6",
+      engine: "12.8 TDI 290-540hp",
+      ecu: "TRW EMS2.3 - ACM",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D13 - TAD13 Euro-6 (alt)",
+      engine: "12.8 TDI 290-540hp",
+      ecu: "TRW EMS2.4 - ACM",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D16 Euro-4",
+      engine: "16.1 TDI 500-600hp",
+      ecu: "TRW EMS2",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D16 Euro-5",
+      engine: "16.1 TDI 540-680hp",
+      ecu: "TRW EMS2.2 - ACM",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D16 Euro-6",
+      engine: "16.1 TDI 550-780hp",
+      ecu: "TRW EMS2.3 - ACM",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo D16 - TWD16 Euro-5",
+      engine: "16.1 TDI 550-796hp",
+      ecu: "TRW EMS2.4 - ACM",
+      services: volvoDefaultServices,
+    },
+    {
+      name: "Volvo Double D11",
+      engine: "21.6 TDI IPS 800-950hp",
+      ecu: "TRW EMS2.4 - ACM",
+      services: volvoDefaultServices,
+    },
+  ],
+},
+renault: {
+  name: "Renault",
+  description: "Renault truck ECU diagnostics and performance tuning.",
+  models: [
+    {
+      name: "Renault DCI 2.5",
+      engine: "2.5 TDI 110-150hp",
+      ecu: "Denso SH705x",
+      services: renaultDefaultServices,
+    },
+    {
+      name: "Renault DCI5 Euro-3",
+      engine: "5.1 TDI DXi5 220-270hp",
+      ecu: "Bosch MS6.3",
+      services: renaultDefaultServices,
+    },
+    {
+      name: "Renault DXi5 Euro-4",
+      engine: "5.1 TDI 270-300hp",
+      ecu: "TRW EMS2 - ACM DCU15",
+      services: renaultDefaultServices,
+    },
+    {
+      name: "Renault DXi5 Euro-5",
+      engine: "5.1 TDI 210-280hp",
+      ecu: "TRW EMS2.2 - ACM",
+      services: renaultDefaultServices,
+    },
+    {
+      name: "Renault DTi5 Euro-6",
+      engine: "5.1 TDI 210-280hp",
+      ecu: "TRW EMS2.3 - ACM",
+      services: renaultDefaultServices,
+    },
+    {
+      name: "Renault DTi5 Euro-6 (high power)",
+      engine: "5.1 TDI 120-350hp",
+      ecu: "TRW EMS2.4 - ACM",
+      services: renaultDefaultServices,
+    },
+    {
+      name: "Renault DXi7 Euro-3-4",
+      engine: "7.2 TDI 270-300hp",
+      ecu: "TRW EMS2 - ACM DCU15",
+      services: renaultDefaultServices,
+    },
+    {
+      name: "Renault DXi8 Euro-3-4",
+      engine: "7.7 TDI 270-300hp",
+      ecu: "TRW EMS2 - ACM DCU15",
+      services: renaultDefaultServices,
+    },
+    {
+      name: "Renault DTi8 Euro-5",
+      engine: "7.8 TDI 210-350hp",
+      ecu: "TRW EMS2.2 - ACM",
+      services: renaultDefaultServices,
+    },
+    {
+      name: "Renault DTi8 Euro-6",
+      engine: "7.8 TDI 210-350hp",
+      ecu: "TRW EMS2.3 - ACM",
+      services: renaultDefaultServices,
+    },
+    {
+      name: "Renault DTi8 Euro-6 (low power)",
+      engine: "7.8 TDI 210-280hp",
+      ecu: "TRW EMS2.4 - ACM",
+      services: renaultDefaultServices,
+    },
+    {
+      name: "Renault DXi11 Euro-4",
+      engine: "10.8 TDI 315-460hp",
+      ecu: "TRW EMS2 - ACM DCU15",
+      services: renaultDefaultServices,
+    },
+    {
+      name: "Renault DXi11 Euro-5",
+      engine: "10.8 TDI 315-460hp",
+      ecu: "TRW EMS2.2 - ACM",
+      services: renaultDefaultServices,
+    },
+    {
+      name: "Renault DTi11 Euro-6",
+      engine: "10.8 TDI 315-460hp",
+      ecu: "TRW EMS2.3 - ACM",
+      services: renaultDefaultServices,
+    },
+    {
+      name: "Renault DTi11 Euro-6 (updated)",
+      engine: "10.8 TDI 315-460hp",
+      ecu: "TRW EMS2.4 - ACM",
+      services: renaultDefaultServices,
+    },
+    {
+      name: "Renault DXi12 Euro-3",
+      engine: "12.5 TDI 440-480hp",
+      ecu: "Bosch MS6.2",
+      services: renaultDefaultServices,
+    },
+    {
+      name: "Renault DXi12 Euro-4",
+      engine: "12.5 TDI 440-480hp",
+      ecu: "TRW EMS2 - ACM DCU15",
+      services: renaultDefaultServices,
+    },
+    {
+      name: "Renault DXi13 Euro-4",
+      engine: "13.5 TDI 460-520hp",
+      ecu: "TRW EMS2 - ACM DCU15",
+      services: renaultDefaultServices,
+    },
+    {
+      name: "Renault DXi13 Euro-5",
+      engine: "12.8 TDI 410-460hp",
+      ecu: "TRW EMS2.2 - ACM",
+      services: renaultDefaultServices,
+    },
+    {
+      name: "Renault DTi13 Euro-6",
+      engine: "12.8 TDI 440-520hp",
+      ecu: "TRW EMS2.3 - ACM",
+      services: renaultDefaultServices,
+    },
+    {
+      name: "Renault DTi13 Euro-6 (latest)",
+      engine: "12.8 TDI 440-520hp",
+      ecu: "TRW EMS2.4 - ACM",
+      services: renaultDefaultServices,
+    },
+  ],
+},
   scania: {
     name: "Scania",
     description: "Scania ECU optimization services.",
@@ -282,7 +666,6 @@ man: {
   newholland: { name: "NewHolland", description: "ECU diagnostics services.", models: [defaultModel("newholland")] },
   nissan: { name: "Nissan", description: "ECU diagnostics services.", models: [defaultModel("nissan")] },
   peterbilt: { name: "Peterbilt", description: "ECU diagnostics services.", models: [defaultModel("peterbilt")] },
-  renault: { name: "Renault", description: "ECU diagnostics services.", models: [defaultModel("renault")] },
   shacman: { name: "Shacman", description: "ECU diagnostics services.", models: [defaultModel("shacman")] },
   tata: { name: "TATA", description: "ECU diagnostics services.", models: [defaultModel("tata")] },
   terex: { name: "Terex", description: "ECU diagnostics services.", models: [defaultModel("terex")] },

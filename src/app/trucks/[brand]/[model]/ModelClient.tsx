@@ -57,7 +57,7 @@ File: ${fileLink || "N/A"}
             >
               <span>{service.name}</span>
 
-              {service.price && (
+              {service.price !=0 && (
                 <span className="text-blue-400 font-semibold">
                   €{service.price}
                 </span>
@@ -68,13 +68,7 @@ File: ${fileLink || "N/A"}
       </div>
 
       {/* FILE INPUT */}
-      <input
-        type="text"
-        placeholder="File link (optional)"
-        value={fileLink}
-        onChange={(e) => setFileLink(e.target.value)}
-        className="mt-8 w-full max-w-xl p-3 rounded-xl bg-[#111] border border-gray-800"
-      />
+    
 
       {/* BUTTON */}
       <button
