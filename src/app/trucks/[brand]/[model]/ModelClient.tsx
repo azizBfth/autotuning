@@ -24,8 +24,6 @@ Model: ${model.name}
 Services:
 ${selectedServices.map((s) => `- ${s}`).join("\n")}
 
-
-Source: AutoTuningLab Website
   `;
 
   const url = `https://wa.me/971585173644?text=${encodeURIComponent(message)}`;
