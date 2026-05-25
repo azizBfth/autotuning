@@ -1280,7 +1280,7 @@ mack: {
   description: "Mack truck ECU diagnostics and performance tuning services.",
   models: [
     {
-      name: "Mack MP Euro-3 <2005",
+      name: "Mack MP Euro-3 -2005",
       engine: "12.0 TDI 250-460hp",
       ecu: "Bosch EDC7",
       services: defaultServices,
