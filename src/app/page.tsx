@@ -121,7 +121,7 @@ export default function Home() {
                 </Link>
 
                 <a
-href="https://wa.me/971585173644?text=Hello,%20I%20am%20contacting%20you%20through%20AutoTuningLab.%20I%20would%20like%20more%20information."                  target="_blank"
+                  href="https://wa.me/971585173644?text=Hello,%20I%20am%20contacting%20you%20through%20AutoTuningLab.%20I%20would%20like%20more%20information." target="_blank"
                   className="px-8 py-4 rounded-2xl
                              border border-white/10
                              bg-white/5 backdrop-blur-xl
@@ -245,7 +245,7 @@ href="https://wa.me/971585173644?text=Hello,%20I%20am%20contacting%20you%20throu
                   </div>
 
                   <a
-href="https://wa.me/971585173644?text=Hello,%20I%20am%20contacting%20you%20through%20AutoTuningLab.%20I%20would%20like%20more%20information."                    target="_blank"
+                    href="https://wa.me/971585173644?text=Hello,%20I%20am%20contacting%20you%20through%20AutoTuningLab.%20I%20would%20like%20more%20information." target="_blank"
                     className="inline-block mt-3 text-lg font-bold"
                   >
                     Contact Expert →
@@ -351,20 +351,22 @@ href="https://wa.me/971585173644?text=Hello,%20I%20am%20contacting%20you%20throu
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 mt-16">
 
             {brands.map((brand) => (
-              <div
+              <Link
                 key={brand}
+                href={`/trucks/${brand.toLowerCase().replace(/\s+/g, "-")}`}
                 className="h-24 rounded-2xl
-                           border border-white/10
-                           bg-[#0c0c0c]
-                           flex items-center justify-center
-                           hover:border-blue-500
-                           hover:text-blue-400
-                           transition-all duration-300"
+               border border-white/10
+               bg-[#0c0c0c]
+               flex items-center justify-center
+               hover:border-blue-500
+               hover:text-blue-400
+               hover:scale-105
+               transition-all duration-300"
               >
                 <span className="font-semibold tracking-wide">
                   {brand}
                 </span>
-              </div>
+              </Link>
             ))}
 
           </div>
@@ -414,7 +416,7 @@ href="https://wa.me/971585173644?text=Hello,%20I%20am%20contacting%20you%20throu
             </Link>
 
             <a
-href="https://wa.me/971585173644?text=Hello,%20I%20am%20contacting%20you%20through%20AutoTuningLab.%20I%20would%20like%20more%20information."              target="_blank"
+              href="https://wa.me/971585173644?text=Hello,%20I%20am%20contacting%20you%20through%20AutoTuningLab.%20I%20would%20like%20more%20information." target="_blank"
               className="px-8 py-4 rounded-2xl
                          border border-white/10
                          hover:bg-white hover:text-black
@@ -513,7 +515,7 @@ href="https://wa.me/971585173644?text=Hello,%20I%20am%20contacting%20you%20throu
                 </a>
 
                 <a
-href="https://wa.me/971585173644?text=Hello,%20I%20am%20contacting%20you%20through%20AutoTuningLab.%20I%20would%20like%20more%20information."                  target="_blank"
+                  href="https://wa.me/971585173644?text=Hello,%20I%20am%20contacting%20you%20through%20AutoTuningLab.%20I%20would%20like%20more%20information." target="_blank"
                   className="block hover:text-blue-400 transition"
                 >
                   💬 WhatsApp Support
